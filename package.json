@@ -9,7 +9,7 @@
   "author": "lasone",
   "license": "ISC",
   "engines": {
-    "node": "4.2.2"
+    "node": "4.7.0"
   },
   "dependencies": {
     "connect-mongo": "1.1.0",
