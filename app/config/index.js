@@ -22,12 +22,12 @@ if (process.env.NODE_ENV === "production") {
       callbackURL: process.env.host + "/auth/twitter/callback",
       profileFields: ["id", "displayName", "photos"]
     },
-    // google: {
-    //   googleClientID: process.env.GOOGLE_CLIENT_ID,
-    //   googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    //   callbackURL: process.env.host + "/auth/google/callback",
-    //   proxy: true
-    // },
+    google: {
+      ClientID: process.env.GOOGLE_CLIENT_ID,
+      ClientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      callbackURL: process.env.host + "/auth/google/callback",
+      proxy: true
+    },
     redis: {
       host: redisURI.hostname,
       port: redisURI.port,

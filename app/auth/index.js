@@ -39,5 +39,5 @@ module.exports = () => {
   };
   passport.use(new FacebookStrategy(config.fb, authProcessor));
   passport.use(new Twitter(config.twitter, authProcessor));
-  // passport.use(new GoogleStrategy(config.google, authProcessor));
+  passport.use(new GoogleStrategy(config.google, authProcessor));
 };

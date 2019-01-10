@@ -49,13 +49,13 @@ module.exports = () => {
         successRedirect: "/rooms",
         failureRedirect: "/"
       }),
-      // "/auth/google/": passport.authenticate("google", {
-      //   scope: ["profile", "email"]
-      // }),
-      // "/auth/google/callback": passport.authenticate("google", {
-      //   successRedirect: "/rooms",
-      //   failureRedirect: "/"
-      // }),
+      "/auth/google/": passport.authenticate("google", {
+        scope: ["profile", "email"]
+      }),
+      "/auth/google/callback": passport.authenticate("google", {
+        successRedirect: "/rooms",
+        failureRedirect: "/"
+      }),
       "/logout": (req, res) => {
         req.logout();
         res.redirect("/");
