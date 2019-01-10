@@ -9,6 +9,9 @@ module.exports = () => {
       "/": (req, res, next) => {
         res.render("login");
       },
+      "/privacy": (req, res, next) => {
+        res.render("privacy");
+      },
       "/rooms": [
         h.isAuthenticated,
         (req, res, next) => {
