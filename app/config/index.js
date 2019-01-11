@@ -23,8 +23,8 @@ if (process.env.NODE_ENV === "production") {
       profileFields: ["id", "displayName", "photos"]
     },
     google: {
-      ClientID: process.env.GOOGLE_CLIENT_ID,
-      ClientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      clientID: process.env.GOOGLE_CLIENT_ID,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
       callbackURL: process.env.host + "/auth/google/callback",
       proxy: true
     },
