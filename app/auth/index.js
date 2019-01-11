@@ -5,7 +5,7 @@ const h = require("../helpers");
 const logger = require("../logger");
 const FacebookStrategy = require("passport-facebook").Strategy;
 const Twitter = require("passport-twitter").Strategy;
-// const GoogleStrategy = require("passport-google-oauth20").Strategy;
+const GoogleStrategy = require("passport-google-oauth20").Strategy;
 
 module.exports = () => {
   passport.serializeUser((user, done) => {
